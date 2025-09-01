@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat';
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+
+#startpuc {
+  font-size: 48px;
+  border: none;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #8a0538;
+  display: none;
+}
+
+.line {
+  display: none;
+  background-color: #8a0538;
+  height: 5px;
+  width: 100%;
+}
+img {
+  transform: translate(-50%, -50);
+  height: 200px;
+  width: 200px;
+}
+.inputContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50px;
+  background-color: #610127;
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input {
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+.botaoContainer{
+  flex: 1;
+}
+
+.botao {
+  position: relative;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: transparent;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.botao:hover {
+  background-color: rgba(97, 1, 39, 1);
+  color: transparent;
+}
+#startpuc.fade {
+  opacity: 0;
+}
+.inputContainer{
+  cursor: default;
+  transition: background 0.5s ease;
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+}
+body{
+  cursor: default;
+  transition: background 1s ease;
+}
+body:hover {
+  background-color: #610127;
+}
+.inputContainer:hover{
+  background-color: #8a0538;
+  transform: translate(-51%, -51%);
+  box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.2);
+}
+.botao::after {
+  content: 'Seja PUCPR';
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.botao:hover::after {
+  opacity: 1;
+}

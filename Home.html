@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema STARTPUC</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header-container hiddn">
+    <h1 class="header hidden">
+      GESTÃO EMPRESARIAL
+    </h1>
+  </div>
+  <section class="blocoContainer hidden">
+
+    <div class="container hidden">
+      <section class="botoes hidden">
+        <img src="./assets/Pucpr-logo (2).svg" alt="">
+        <a href="">VISÃO GERAL</a>
+        <a href="">VER LUCROS</a>
+        <a href="">VER DESEMPENHOS</a>
+        <a href="index.html">GERAR RELATÓRIO</a>
+        <div class="bolaContainer">
+
+          <div class="bola">
+            <img src="./assets/Pucpr-logo (1).svg" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="containerQuadrado hidden">
+      <section class="quadradoContainer hidden">
+        <h1>ADICIONAR FUNCIONÁRIOS</h1>
+        <div id='adicionar' class="adicionar hidden">+</div>
+      </section>
+      <div id="listaFuncionarios" class="listaFuncionarios"></div>
+    </div>
+
+  </section>
+  <div class="quadro ">
+    <div class="containerQuadro ">
+      <div id="xQuadro" class='xContainer'>
+        X
+      </div>
+    </div>
+    <div class="inputContainer">
+      <input id="nome" type="text" class="input" placeholder="Nome">
+      <input id="email" type="email" class="input" placeholder="Email">
+      <input id="cpf" type="number" class="input" placeholder="CPF">
+
+      <button id="botao" class="botao">ADICIONAR</button>
+    </div>
+  </div>
+
+  <script src="programa.js"></script>
+</body>
+
+</html>
